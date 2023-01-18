@@ -1,0 +1,28 @@
+#hoveruchun{
+    margin-right: 50px;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#hoveruchun h2{
+    text-align: center;
+}
+#hoveruchun:hover{
+    box-shadow: 0 0 39px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.08);
+    color: rgb(70, 194, 70);
+}
+
+
+
+
+
+@media (max-width: 700px){
+  #hoveruchun{
+   margin: 10px;
+   
+  }
+}
